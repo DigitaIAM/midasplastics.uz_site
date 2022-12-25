@@ -149,9 +149,47 @@
       </div>
     </div>
 
-    <div class="full-width q-pt-lg">
+    <!-- products -->
+    <div class="full-width q-pa-lg">
       <div class="title text-right text-h3 text-bold title-top text-white">
         <span class="bg-positive q-pa-md" style="padding-right: 600px;">ПРОДУКЦИЯ</span>
+      </div>
+    </div>
+
+    <!-- <div class="row flex-center">
+      <div class="q-pa-md">
+        <q-carousel arrows animated v-model="slide">
+          <q-carousel-slide name="first" img-src="product/a1.jpg" style="height: 400px; width: 400px">
+            <div class="absolute-bottom custom-caption">
+              <div class="text-h2">стакан с УФ печатью</div>
+              <div class="text-subtitle1">Mountains</div>
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide name="second" img-src="product/a2.jpg" style="height: 400px; width: 400px">
+            <div class="absolute-bottom custom-caption">
+              <div class="text-h2">Second stop</div>
+              <div class="text-subtitle1">Famous City</div>
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide name="third" img-src="product/a3.jpg" style="height: 400px; width: 400px">
+            <div class="absolute-bottom custom-caption">
+              <div class="text-h2">Third stop</div>
+              <div class="text-subtitle1">Famous Bridge</div>
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
+      </div>
+    </div> -->
+
+    <div class="row text-h6 text-center full-width q-ma-lg">
+      <div class="fit row wrap justify-center content-center q-gutter-xl">
+        <q-card class="my-card" v-for="group in groups" :key="group.img">
+          <q-img :src="group.img" :ratio="1" style="width:250px">
+            <div class="absolute-bottom text-subtitle2 text-center">
+              {{ group.title }}
+            </div>
+          </q-img>
+        </q-card>
       </div>
     </div>
 
@@ -160,10 +198,41 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "PageIndex",
+  setup() {
+    return {
+      slide: ref('first'),
+      groups: [
+        { img: "product/a1.jpg", title: "Cтакан с УФ печатью" },
+        { img: "product/a2.jpg", title: "Стакан с картонной этикеткой" },
+        { img: "product/a3.jpg", title: "Стакан с термоусадочной этикеткой" },
+      ],
+    }
+  }
 });
-</script>
 
+
+
+
+</script>
+<style lang="sass" scoped>
+.custom-caption
+  text-align: center
+  padding: 12px
+  color: white
+  background-color: rgba(0, 0, 0, .3)
+
+  .my-card
+  // width: 100%
+  // max-width: 250px
+  // height: 100%
+  // max-height: 250px
+
+  // .img-center
+  // display: block
+  // margin-left: auto
+  // margin-right: auto
+</style>
