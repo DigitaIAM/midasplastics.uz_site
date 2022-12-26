@@ -1,26 +1,22 @@
 <template>
   <q-page class="flex flex-center" style="background: #f5f7f5;">
     <!-- title -->
-    <div class="full-width header q-pb-md">
-      <div class="title text-center text-h3 text-bold title-top text-red q-pa-xl">
+    <div class="full-width q-pb-md back-img" style="height: 400px">
+      <div class="text-center text-h3 text-bold text-pink-10 q-pa-xl">
         ПРАВИЛЬНАЯ УПАКОВКА
         <br />
         ДЛЯ ПРАВИЛЬНЫХ ПРОДУКТОВ
       </div>
-      <div class="title text-center text-h4 text-bold title q-pb-lg q-ma-lg">
-        <span>
-          Мы производим пищевую упаковку для молочных предприятий.
-        </span>
-      </div>
-      <div class="title text-right text-h3 text-bold title-top text-white">
-        <span class="bg-positive q-pa-md" style="padding-right: 400px;">НАШЕ ПРОИЗВОДСТВО</span>
+
+      <div class="text-h3 text-center text-bold text-pink-10">
+        <span>НАШЕ ПРОИЗВОДСТВО</span>
       </div>
     </div>
 
 
     <!-- description -->
     <!-- first card -->
-    <div class="row full-width q-pt-lg flex-center">
+    <div class="row full-width q-pt-lg flex-center bg-lime-1">
       <div class="col-sm-7">
         <q-img src="tools/1.png" class="img-center q-ma-lg gt-xs" style="width: 90%;" />
       </div>
@@ -41,7 +37,7 @@
       </div>
     </div>
     <!-- second card -->
-    <div class="row full-width q-pt-md flex-center">
+    <div class="row full-width q-pt-md flex-center bg-cyan-1">
       <div class="col-sm-5">
         <div class="row q-px-lg q-pt-lg text-h5 text-left">
           <div class="q-pa-md">
@@ -62,7 +58,7 @@
       </div>
     </div>
     <!-- third card -->
-    <div class="row full-width flex-center q-pt-lg">
+    <div class="row full-width flex-center q-pt-lg bg-lime-1">
       <div class="col-sm-7 flex-center">
         <div class="row">
           <div class="col-sm-4"></div>
@@ -103,6 +99,7 @@
         <q-separator />
       </div>
     </div>
+
     <div class="full-width q-pt-lg">
       <div class="title text-left text-h3 text-bold title-top text-white">
         <span class="bg-positive q-pa-md" style="padding-left: 400px;">КАЧЕСТВО И БЕЗОПАСНОСТЬ</span>
@@ -156,31 +153,6 @@
       </div>
     </div>
 
-    <!-- <div class="row flex-center">
-      <div class="q-pa-md">
-        <q-carousel arrows animated v-model="slide">
-          <q-carousel-slide name="first" img-src="product/a1.jpg" style="height: 400px; width: 400px">
-            <div class="absolute-bottom custom-caption">
-              <div class="text-h2">стакан с УФ печатью</div>
-              <div class="text-subtitle1">Mountains</div>
-            </div>
-          </q-carousel-slide>
-          <q-carousel-slide name="second" img-src="product/a2.jpg" style="height: 400px; width: 400px">
-            <div class="absolute-bottom custom-caption">
-              <div class="text-h2">Second stop</div>
-              <div class="text-subtitle1">Famous City</div>
-            </div>
-          </q-carousel-slide>
-          <q-carousel-slide name="third" img-src="product/a3.jpg" style="height: 400px; width: 400px">
-            <div class="absolute-bottom custom-caption">
-              <div class="text-h2">Third stop</div>
-              <div class="text-subtitle1">Famous Bridge</div>
-            </div>
-          </q-carousel-slide>
-        </q-carousel>
-      </div>
-    </div> -->
-
     <div class="row text-h6 text-center full-width q-ma-lg">
       <div class="fit row wrap justify-center content-center q-gutter-xl">
         <q-card class="my-card" v-for="group in groups" :key="group.img">
@@ -193,7 +165,51 @@
       </div>
     </div>
 
+    <!-- placing orders -->
+    <div class="full-width q-pt-lg">
+      <div class="title text-left text-h3 text-bold title-top text-white">
+        <span class="bg-positive q-pa-md" style="padding-left: 550px;">ПРИЕМ ЗАКАЗОВ</span>
+      </div>
+    </div>
 
+    <div class="row full-width flex-center q-pt-md">
+      <div class="col-sm-7 text-center">
+        <q-img src="location/geo.png" class="img q-ma-lg gt-xs" style="height:fit-content; width: 50%;" />
+      </div>
+
+      <div class="col-sm-5">
+        <div class="q-pa-md" style="max-width: 400px">
+          <div class="row">
+            <div class="col-sm-1 text-primary text-h6"><span class="material-icons">phone
+              </span></div>
+            <div class="col-sm-11 text-h6"><a href="tel:+998 93 333 85 75" style="color: darkorchid;">
+                +998 93 333 85 75
+              </a> <br />
+              <a href="tel:+998 93 720 33 38" style="color: darkorchid;">
+                +998 93 720 33 38
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="q-pa-md" style="max-width: 400px">
+          <div class="row">
+            <div class="col-sm-1 text-primary text-h6"><span class="material-icons">place
+              </span></div>
+            <div class="col-sm-11 text-h6">Узбекистан, г. Самарканд, ул. Гагарина, 36.
+            </div>
+          </div>
+        </div>
+        <div class="q-pa-md" style="max-width: 400px">
+          <div class="row">
+            <div class="col-sm-1 text-primary text-h6"><span class="material-icons">mail
+              </span></div>
+            <div class="col-sm-11 text-h6"><a href="mailto:info@midasplastics.uz">info@midasplastics.uz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </q-page>
 </template>
 
@@ -206,9 +222,10 @@ export default defineComponent({
     return {
       slide: ref('first'),
       groups: [
-        { img: "product/a1.jpg", title: "Cтакан с УФ печатью" },
-        { img: "product/a2.jpg", title: "Стакан с картонной этикеткой" },
-        { img: "product/a3.jpg", title: "Стакан с термоусадочной этикеткой" },
+        { img: "product/a5.jpg", title: "Cтакан с УФ печатью" },
+        { img: "product/a6.jpg", title: "Стакан с картонной этикеткой" },
+        { img: "product/a7.jpg", title: "Стакан с термоусадочной этикеткой" },
+        { img: "product/a8.jpg", title: "Крышки на стаканы" },
       ],
     }
   }
@@ -219,6 +236,12 @@ export default defineComponent({
 
 </script>
 <style lang="sass" scoped>
+.back-img
+  background: url(/cups.jpg)
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  background-repeat: no-repeat
 .custom-caption
   text-align: center
   padding: 12px
@@ -226,13 +249,18 @@ export default defineComponent({
   background-color: rgba(0, 0, 0, .3)
 
   .my-card
-  // width: 100%
-  // max-width: 250px
-  // height: 100%
-  // max-height: 250px
+  width: 100%
+  max-width: 250px
+  height: 100%
+  max-height: 250px
 
-  // .img-center
-  // display: block
-  // margin-left: auto
-  // margin-right: auto
+  .img-center
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+
+
+
+
 </style>
