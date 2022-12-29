@@ -6,7 +6,7 @@
         <q-toolbar-title>
           Midas Plastics
         </q-toolbar-title>
-        <div class="text-h6">+xxx xx xxx xxxx</div>
+        <div class="text-h6">++998 93 333 85 75</div>
       </q-toolbar>
     </q-header>
 

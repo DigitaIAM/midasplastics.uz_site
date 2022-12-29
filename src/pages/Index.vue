@@ -1,22 +1,30 @@
 <template>
-  <q-page class="flex flex-center" style="background: #f5f7f5;">
+  <q-page class="flex flex-center" style="background: white;">
     <!-- title -->
-    <div class="full-width q-pb-md back-img" style="height: 400px">
-      <div class="text-center text-h3 text-bold text-pink-10 q-pa-xl">
-        ПРАВИЛЬНАЯ УПАКОВКА
-        <br />
-        ДЛЯ ПРАВИЛЬНЫХ ПРОДУКТОВ
-      </div>
-
-      <div class="text-h3 text-center text-bold text-pink-10">
-        <span>НАШЕ ПРОИЗВОДСТВО</span>
+    <div class="full-width q-pb-xl">
+      <div class="row full-width">
+        <div class="col-sm-2 bg-indigo-9">
+        </div>
+        <div class="col-sm-3">
+          <q-img src="/logo.png" class="float-center q-ma-lg gt-xs" style="max-width: 70%; height: auto" />
+        </div>
+        <div class="col-sm-7 text-justtify text-h3 text-bold text-red q-py-xl">
+          ПРАВИЛЬНАЯ УПАКОВКА
+          <br />
+          ДЛЯ ПРАВИЛЬНЫХ ПРОДУКТОВ
+        </div>
       </div>
     </div>
 
+    <div class="full-width q-pt-lg">
+      <div class="title text-right text-h3 text-bold title-top text-white">
+        <span class="bg-indigo-9 q-pa-md" style="padding-right: 400px;">НАШЕ ПРОИЗВОДСТВО</span>
+      </div>
+    </div>
 
     <!-- description -->
     <!-- first card -->
-    <div class="row full-width q-pt-lg flex-center bg-lime-1">
+    <div class="row full-width q-pt-lg flex-center">
       <div class="col-sm-7">
         <q-img src="tools/1.png" class="img-center q-ma-lg gt-xs" style="width: 90%;" />
       </div>
@@ -37,7 +45,7 @@
       </div>
     </div>
     <!-- second card -->
-    <div class="row full-width q-pt-md flex-center bg-cyan-1">
+    <div class="row full-width q-pt-md flex-center">
       <div class="col-sm-5">
         <div class="row q-px-lg q-pt-lg text-h5 text-left">
           <div class="q-pa-md">
@@ -58,7 +66,7 @@
       </div>
     </div>
     <!-- third card -->
-    <div class="row full-width flex-center q-pt-lg bg-lime-1">
+    <div class="row full-width flex-center q-pt-lg">
       <div class="col-sm-7 flex-center">
         <div class="row">
           <div class="col-sm-4"></div>
@@ -102,7 +110,7 @@
 
     <div class="full-width q-pt-lg">
       <div class="title text-left text-h3 text-bold title-top text-white">
-        <span class="bg-positive q-pa-md" style="padding-left: 400px;">КАЧЕСТВО И БЕЗОПАСНОСТЬ</span>
+        <span class="bg-indigo-9 q-pa-md" style="padding-left: 400px;">КАЧЕСТВО И БЕЗОПАСНОСТЬ</span>
       </div>
     </div>
 
@@ -132,7 +140,7 @@
 
     <div class="row q-pt-xl">
       <div class="col">
-        <div class="text-h2 text-center text-indigo text-bold" style="padding-left: 300px; padding-right: 300px;">
+        <div class="text-h4 text-center text-indigo-9 text-bold" style="padding-left: 300px; padding-right: 300px;">
           ООО «MIDAS PLASTICS» - это производство полного цикла
         </div>
       </div>
@@ -147,11 +155,16 @@
     </div>
 
     <!-- products -->
-    <div class="full-width q-pa-lg">
+    <div class="full-width q-pt-lg">
       <div class="title text-right text-h3 text-bold title-top text-white">
-        <span class="bg-positive q-pa-md" style="padding-right: 600px;">ПРОДУКЦИЯ</span>
+        <span class="bg-indigo-9 q-pa-md" style="padding-right: 600px;">ПРОДУКЦИЯ</span>
       </div>
     </div>
+    <!-- <div class="full-width q-pa-lg">
+      <div class="title text-right text-h3 text-bold title-top text-white">
+        <span class="bg-indigo-9 q-pa-md" style="padding-right: 600px;">ПРОДУКЦИЯ</span>
+      </div>
+    </div> -->
 
     <div class="row text-h6 text-center full-width q-ma-lg">
       <div class="fit row wrap justify-center content-center q-gutter-xl">
@@ -168,7 +181,7 @@
     <!-- placing orders -->
     <div class="full-width q-pt-lg">
       <div class="title text-left text-h3 text-bold title-top text-white">
-        <span class="bg-positive q-pa-md" style="padding-left: 550px;">ПРИЕМ ЗАКАЗОВ</span>
+        <span class="bg-indigo-9 q-pa-md" style="padding-left: 550px;">ПРИЕМ ЗАКАЗОВ</span>
       </div>
     </div>
 
@@ -236,12 +249,6 @@ export default defineComponent({
 
 </script>
 <style lang="sass" scoped>
-.back-img
-  background: url(/cups.jpg)
-  background-size: cover
-  background-position: center
-  background-attachment: fixed
-  background-repeat: no-repeat
 .custom-caption
   text-align: center
   padding: 12px
