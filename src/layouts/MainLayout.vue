@@ -6,7 +6,9 @@
         <q-toolbar-title>
           Midas Plastics
         </q-toolbar-title>
-        <div class="text-h6">++998 93 333 85 75</div>
+        <div class="text-h6"><a href="tel:+998 93 333 85 75" style="color: white;">
+            +998 93 333 85 75
+          </a></div>
       </q-toolbar>
     </q-header>
 
