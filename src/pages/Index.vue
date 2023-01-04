@@ -22,11 +22,7 @@
       </div>
     </div>
 
-    <!-- <h1>
-      <a href="/Quasar/quasar_demo/quasar-midasplastics/src/pages/Index.vue/#c1">
-        Link
-      </a>
-    </h1> -->
+    <!-- <q-btn v-bind:to="'/Quasar/quasar_demo/quasar-midasplastics/src/pages/Index.vue#UF'" class="q-ma-lg" label="To Docs index" outline color="red" /> -->
 
     <h1>
       <a href="#c1">
@@ -52,16 +48,16 @@
     </div>
     <!-- second card -->
     <div class="row full-width q-pt-md flex-center">
-      <div class="col-sm-6">
-        <div class="row q-px-lg q-pt-lg text-h5 text-left">
-          <div class="q-pa-md">
+      <div class="col-sm-7">
+        <div class="row q-px-lg q-pt-lg text-h5 text-center">
+          <div class="col q-pa-md">
             обеспечивает высокую производительность
           </div>
         </div>
 
       </div>
-      <div class="col-sm-6">
-        <q-img src="tools/2.png" class="img-center q-mr-lg q-mr-xl" style="width: 80%; " />
+      <div class="col-sm-5">
+        <q-img src="tools/2.png" class="q-mr-lg q-mr-xl float-center" style="width: 550px; height: auto;" />
       </div>
     </div>
     <!-- third card -->
@@ -107,23 +103,11 @@
     <div class="row q-pt-xl">
       <div class="col">
         <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
+          <q-img src="product/a4.jpg" class="q-ml-xl float-right"
+            style="width: 600px; height: auto;" />
           Все наше производство устроено так, как если бы мы производили детское питание - это позволяет нам
-          гарантировать чистоту и безопасность нашей продукции.
-        </div>
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <q-img src="product/a4.jpg" class="img-center q-ma-lg gt-xs" style="width: 650px; height: auto;" />
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
-          Начиная от полимерной гранулы и заканчивая готовой упаковкой с декором - мы отслеживаем качество упаковки всех
-          стадиях производства. Это позволяет нам выпускать достойный продукт со стабильным качеством.
+          гарантировать чистоту и безопасность нашей продукции. Начиная от полимерной гранулы и заканчивая готовой
+          упаковкой с декором - мы отслеживаем качество упаковки всех стадиях производства. Это позволяет нам выпускать достойный продукт со стабильным качеством.
         </div>
       </div>
     </div>
@@ -168,8 +152,8 @@
 
     <div class="row q-pt-xl">
       <div class="col">
-        <div class="text-h5 text-justify" id="c1" style="padding-left: 150px; padding-right: 150px;">
-          <span class="text-bold" id="c1">Стаканы c печатью</span> является наиболее распространенным и экономичным
+        <div class="text-h5 text-justify first" id="c1" style="padding-left: 150px; padding-right: 150px;" label="UF">
+          <span class="text-bold" id="c1">Стаканы c УФ печатью</span> является наиболее распространенным и экономичным
           способом декорирования стаканов. Печать на стаканы производится ультрафиолетовыми красками, прочно
           закрепляющимися на поверхности стакана.
         </div>
