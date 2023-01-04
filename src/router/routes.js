@@ -1,11 +1,19 @@
 const routes = [
   {
+    mode: "history",
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     children: [{ path: "", component: () => import("pages/Index.vue") }],
+    // scrollBehavior: function (to) {
+    //   if (to.hash) {
+    //     return {
+    //       selector: to.hash,
+    //     };
+    //   }
+    // },
   },
 
-  // Always leave this as last one, 
+  // Always leave this as last one,
   // but you can also remove it
   {
     path: "/:catchAll(.*)*",

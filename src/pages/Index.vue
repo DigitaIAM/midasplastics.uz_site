@@ -22,16 +22,18 @@
       </div>
     </div>
 
-    <!-- <q-btn v-bind:to="'/Quasar/quasar_demo/quasar-midasplastics/src/pages/Index.vue#UF'" class="q-ma-lg" label="To Docs index" outline color="red" /> -->
+    <!-- <q-btn v-bind:to="'#c1'" class="q-ma-lg" label="To Docs index" outline color="red" /> -->
 
-    <h1>
+    <!-- <h1>
       <a href="#c1">
         Link
       </a>
-    </h1>
+    </h1> -->
 
-    <router-link v-bind:to="'/Quasar/quasar_demo/quasar-midasplastics/src/pages/Index.vue/#c1'" class='primary'>GOOO
-    </router-link>
+    <a href="#c1"><q-btn depressed plain text-color="red" label="Link" class="q-ma-xl"/></a>
+
+    <!-- <router-link v-bind:to="'/Quasar/quasar_demo/quasar-midasplastics/src/pages/Index.vue/#c1'" class='primary'>GOOO
+    </router-link> -->
     <!-- description -->
     <!-- first card -->
     <div class="row full-width q-pt-lg flex-center">
@@ -103,11 +105,11 @@
     <div class="row q-pt-xl">
       <div class="col">
         <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
-          <q-img src="product/a4.jpg" class="q-ml-xl float-right"
-            style="width: 600px; height: auto;" />
+          <q-img src="product/a4.jpg" class="q-ml-xl float-right" style="width: 600px; height: auto;" />
           Все наше производство устроено так, как если бы мы производили детское питание - это позволяет нам
           гарантировать чистоту и безопасность нашей продукции. Начиная от полимерной гранулы и заканчивая готовой
-          упаковкой с декором - мы отслеживаем качество упаковки всех стадиях производства. Это позволяет нам выпускать достойный продукт со стабильным качеством.
+          упаковкой с декором - мы отслеживаем качество упаковки всех стадиях производства. Это позволяет нам выпускать
+          достойный продукт со стабильным качеством.
         </div>
       </div>
     </div>
@@ -255,9 +257,6 @@ export default defineComponent({
     }
   }
 });
-
-
-
 
 </script>
 <style lang="sass" scoped>
