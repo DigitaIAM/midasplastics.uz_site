@@ -16,24 +16,119 @@
       </div>
     </div>
 
+
+    <!-- products -->
+    <div class="full-width q-pb-xl">
+      <div class="text-right text-h3 text-bold text-white">
+        <span class="bg-indigo-9 q-pa-md" style="padding-right: 600px;">ПРОДУКЦИЯ</span>
+      </div>
+    </div>
+
+
+
+    <div class="row text-h6 text-center full-width q-ma-lg">
+      <div class="fit row wrap justify-center content-center q-gutter-xl">
+        <q-card class="my-card" v-for="group in groups" :key="group.img">
+          <a href="#c1"><q-img :src="group.img" :ratio="1" style="width:250px">
+              <div class="absolute-bottom text-subtitle2 text-center">
+                {{ group.title }}
+              </div>
+            </q-img>
+          </a>
+        </q-card>
+      </div>
+    </div>
+
+    <div class="row q-pt-xl">
+      <div class="col">
+        <div class="text-h5 text-justify first" id="c1" style="padding-left: 150px; padding-right: 150px;" label="UF">
+          <span class="text-bold" id="c1">Стаканы c УФ печатью</span> является наиболее распространенным и экономичным
+          способом декорирования стаканов. Печать на стаканы производится ультрафиолетовыми красками, прочно
+          закрепляющимися на поверхности стакана.
+        </div>
+      </div>
+    </div>
+
+    <div class="row q-pt-xl">
+      <div class="col">
+        <div class="text-h5 text-justify" id="c2" style="padding-left: 150px; padding-right: 150px;">
+          <span class="text-bold ">Стакан с картонной этикеткой – комбинация пластика и картона.</span> На наружную
+          поверхность
+          изготовленного полипропиленового стакана наклеивается картонная этикетка.
+        </div>
+      </div>
+    </div>
+
+    <div class="row q-pt-xl">
+      <div class="col">
+        <div class="text-h5 text-justify" id="c3" style="padding-left: 150px; padding-right: 150px;">
+          <span class="text-bold ">Стакан с термоусадочной этикеткой.</span> На наружную поверхность полипропиленового
+          стакана усаживается термоусадочная этикетка. Печать наносится на внутреннюю поверхность этикетки, благодаря
+          чему изображение долго сохраняет свою насыщенность и не истирается.
+        </div>
+      </div>
+    </div>
+
+    <div class="row q-py-xl">
+      <div class="col">
+        <div class="text-h5 text-justify" id="c4" style="padding-left: 150px; padding-right: 150px;">
+          <span class="text-bold ">Крышки на стаканы.</span> Мы производим полипропиленовые крышки «нахлобучки»
+          (поверх крышки для фольги) высокого качества, пригодные для надевания на стакан на высокоскоростных
+          разливочных линиях.
+        </div>
+      </div>
+    </div>
+
+    <q-btn v-bind:to="'#a1'" outline text-color="red" label="Оформить Заказ" class="q-mb-lg" />
+
+    <!-- <h5>
+      <a href="#a1">
+        Оформить Заказ
+      </a>
+    </h5> -->
+
+    <!-- quality & safety -->
     <div class="full-width q-pt-lg">
-      <div class="text-right text-h3 text-bold title-top text-white">
+      <div class="text-left text-h3 text-bold title-top text-white">
+        <span class="bg-indigo-9 q-pa-md" style="padding-left: 400px;">КАЧЕСТВО И БЕЗОПАСНОСТЬ</span>
+      </div>
+    </div>
+
+    <div class="row q-pt-xl">
+      <div class="col">
+        <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
+          <q-img src="product/a4.jpg" class="q-ml-xl float-right" style="width: 600px; height: auto;" />
+          Все наше производство устроено так, как если бы мы производили детское питание - это позволяет нам
+          гарантировать чистоту и безопасность нашей продукции. Начиная от полимерной гранулы и заканчивая готовой
+          упаковкой с декором - мы отслеживаем качество упаковки всех стадиях производства. Это позволяет нам выпускать
+          достойный продукт со стабильным качеством.
+        </div>
+      </div>
+    </div>
+
+    <div class="row q-pt-xl">
+      <div class="col">
+        <div class="text-h4 text-center text-indigo-9 text-bold" style="padding-left: 300px; padding-right: 300px;">
+          ООО «MIDAS PLASTICS» - это производство полного цикла
+        </div>
+      </div>
+    </div>
+
+    <div class="row q-pt-xl">
+      <div class="col">
+        <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
+          Весь путь от гранулы до готовой упаковки с печатью полностью проходит на одной территории, что позволяет нам
+          отслеживать весь процесс и производить качественный продукт.</div>
+      </div>
+    </div>
+
+    <!-- tools -->
+    <div class="full-width q-pt-xl">
+      <div class="text-right text-h3 text-bold text-white">
         <span class="bg-indigo-9 q-pa-md" style="padding-right: 400px;">НАШЕ ПРОИЗВОДСТВО</span>
       </div>
     </div>
 
-    <!-- <q-btn v-bind:to="'#c1'" class="q-ma-lg" label="To Docs index" outline color="red" /> -->
-
-    <!-- <h1>
-      <a href="#c1">
-        Link
-      </a>
-    </h1> -->
-
-    <a href="#c1"><q-btn depressed plain text-color="red" label="Link" class="q-ma-xl"/></a>
-
-    <!-- <router-link v-bind:to="'/Quasar/quasar_demo/quasar-midasplastics/src/pages/Index.vue/#c1'" class='primary'>GOOO
-    </router-link> -->
     <!-- description -->
     <!-- first card -->
     <div class="row full-width q-pt-lg flex-center">
@@ -96,106 +191,10 @@
       </div>
     </div>
 
-    <div class="full-width q-pt-lg">
-      <div class="text-left text-h3 text-bold title-top text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-left: 400px;">КАЧЕСТВО И БЕЗОПАСНОСТЬ</span>
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
-          <q-img src="product/a4.jpg" class="q-ml-xl float-right" style="width: 600px; height: auto;" />
-          Все наше производство устроено так, как если бы мы производили детское питание - это позволяет нам
-          гарантировать чистоту и безопасность нашей продукции. Начиная от полимерной гранулы и заканчивая готовой
-          упаковкой с декором - мы отслеживаем качество упаковки всех стадиях производства. Это позволяет нам выпускать
-          достойный продукт со стабильным качеством.
-        </div>
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h4 text-center text-indigo-9 text-bold" style="padding-left: 300px; padding-right: 300px;">
-          ООО «MIDAS PLASTICS» - это производство полного цикла
-        </div>
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
-          Весь путь от гранулы до готовой упаковки с печатью полностью проходит на одной территории, что позволяет нам
-          отслеживать весь процесс и производить качественный продукт.</div>
-      </div>
-    </div>
-
-    <!-- products -->
-    <div class="full-width q-py-xl">
-      <div class="text-right text-h3 text-bold title-top text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-right: 600px;">ПРОДУКЦИЯ</span>
-      </div>
-    </div>
-
-
-
-    <div class="row text-h6 text-center full-width q-ma-lg">
-      <div class="fit row wrap justify-center content-center q-gutter-xl">
-        <q-card class="my-card" v-for="group in groups" :key="group.img">
-          <a href="#c1"><q-img :src="group.img" :ratio="1" style="width:250px">
-              <div class="absolute-bottom text-subtitle2 text-center">
-                {{ group.title }}
-              </div>
-            </q-img>
-          </a>
-        </q-card>
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5 text-justify first" id="c1" style="padding-left: 150px; padding-right: 150px;" label="UF">
-          <span class="text-bold" id="c1">Стаканы c УФ печатью</span> является наиболее распространенным и экономичным
-          способом декорирования стаканов. Печать на стаканы производится ультрафиолетовыми красками, прочно
-          закрепляющимися на поверхности стакана.
-        </div>
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5 text-justify" id="c2" style="padding-left: 150px; padding-right: 150px;">
-          <span class="text-bold ">Стакан с картонной этикеткой – комбинация пластика и картона.</span> На наружную
-          поверхность
-          изготовленного полипропиленового стакана наклеивается картонная этикетка.
-        </div>
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5 text-justify" id="c3" style="padding-left: 150px; padding-right: 150px;">
-          <span class="text-bold ">Стакан с термоусадочной этикеткой.</span> На наружную поверхность полипропиленового
-          стакана усаживается термоусадочная этикетка. Печать наносится на внутреннюю поверхность этикетки, благодаря
-          чему изображение долго сохраняет свою насыщенность и не истирается.
-        </div>
-      </div>
-    </div>
-
-    <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5 text-justify" id="c4" style="padding-left: 150px; padding-right: 150px;">
-          <span class="text-bold ">Крышки на стаканы.</span> Мы производим полипропиленовые крышки «нахлобучки»
-          (поверх крышки для фольги) высокого качества, пригодные для надевания на стакан на высокоскоростных
-          разливочных линиях.
-        </div>
-      </div>
-    </div>
-
     <!-- placing orders -->
     <div class="full-width q-py-xl">
       <div class="text-left text-h3 text-bold text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-left: 550px;">ПРИЕМ ЗАКАЗОВ</span>
+        <span class="bg-indigo-9 q-pa-md" id="a1" style="padding-left: 550px;">ПРИЕМ ЗАКАЗОВ</span>
       </div>
     </div>
 
