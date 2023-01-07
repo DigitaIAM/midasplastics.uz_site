@@ -181,16 +181,47 @@
       </div>
     </div>
 
-    <!-- placing orders -->
+    <!-- price list -->
     <div class="full-width q-py-xl">
       <div class="text-left text-h3 text-bold text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-left: 550px;" ref="ordering">ПРИЕМ ЗАКАЗОВ</span>
+        <span class="bg-indigo-9 q-pa-md" style="padding-left: 550px;" ref="ordering">Прайс лист</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="q-pa-md ">
+        <q-table title="Стакан с картонной этикеткой 230мл" title-class="text-bold" :rows="rows" :columns="columns" row-key="name"
+          hide-bottom />
+      </div>
+
+      <div class="q-pa-md">
+        <q-table title="Стакан с картонной этикеткой 420мл" title-class="text-bold" :rows="rows_1" :columns="columns_1" row-key="name"
+          hide-bottom />
+      </div>
+
+      <div class="q-pa-md">
+        <q-table title="Стакан с термоусадочной этикеткой 270мл" title-class="text-bold" :rows="rows_2" :columns="columns_2" row-key="name"
+          hide-bottom />
+      </div>
+
+      <div class="q-pa-md float-left">
+        <q-table title="Крышка полипропиленовая" title-class="text-bold" :rows="rows_3" :columns="columns_3" row-key="name" hide-bottom />
+      </div>
+    </div>
+
+    <!-- placing orders -->
+    <div class="full-width q-py-xl">
+      <div class="text-right text-h3 text-bold text-white">
+        <span class="bg-indigo-9 q-pa-md" style="padding-right: 550px;" ref="ordering">Прием заказов</span>
       </div>
     </div>
 
     <div class="row full-width q-pt-md">
       <div class="col-sm-7 text-center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.069332161991!2d66.93449035323566!3d39.67065494165193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19f6d85e60d1%3A0xb4d60d21fc6f24ae!2z0J7QntCeICLQotCe0J3QkyI!5e0!3m2!1sru!2s!4v1673002782281!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.069332161991!2d66.93449035323566!3d39.67065494165193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19f6d85e60d1%3A0xb4d60d21fc6f24ae!2z0J7QntCeICLQotCe0J3QkyI!5e0!3m2!1sru!2s!4v1673002782281!5m2!1sru!2s"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="col-sm-5">
@@ -250,6 +281,283 @@ const scrollTo = () => {
   const duration = 300
   setVerticalScrollPosition(target, offset, duration)
 }
+
+// price list
+// table 1
+const columns = [
+  {
+    name: 'name',
+    required: true,
+    label: 'Статья затрат/Тираж',
+    align: 'left',
+    field: (row) => row.name,
+    style: 'font-size: 16px',
+    headerStyle: {
+      fontSize: '1.2em',
+      fontWeight: 'bold'
+    },
+  },
+  {
+    name: 'a', label: '50 000', field: 'a', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'b', label: '100 000', field: 'b', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'c', label: '150 000', field: 'c', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'd', label: '200 000', field: 'd', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'e', label: '250 000', field: 'e', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'f', label: '300 000', field: 'f', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'g', label: '350 000', field: 'g', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'h', label: '400 000', field: 'h', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+];
+
+const rows = [
+  {
+    name: 'Цена стакан + крышка, без НДС',
+    a: '858,72',
+    b: '735,36',
+    c: '685,17',
+    d: '665,29',
+    e: '653,33',
+    f: '647,80',
+    g: '643,09',
+    h: '638,66',
+  },
+  {
+    name: 'Цена стакан + крышка, с НДС',
+    a: '961,76',
+    b: '823,60',
+    c: '767,39',
+    d: '745,12',
+    e: '731,72',
+    f: '725,53',
+    g: '720,26',
+    h: '715,29',
+  },
+];
+
+// table 2
+const columns_1 = [
+  {
+    name: 'name',
+    required: true,
+    label: 'Статья затрат/Тираж',
+    align: 'left',
+    field: (row) => row.name,
+    style: 'font-size: 16px',
+    headerStyle: {
+      fontSize: '1.2em',
+      fontWeight: 'bold'
+    }
+  },
+  {
+    name: 'a', label: '50 000', field: 'a', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'b', label: '100 000', field: 'b', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'c', label: '150 000', field: 'c', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'd', label: '200 000', field: 'd', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'e', label: '250 000', field: 'e', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'f', label: '300 000', field: 'f', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'g', label: '350 000', field: 'g', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'h', label: '400 000', field: 'h', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+];
+
+const rows_1 = [
+  {
+    name: 'Цена стакан + крышка, без НДС',
+    a: '1 078,31',
+    b: '947,89',
+    c: '892,85',
+    d: '858,94',
+    e: '843,54',
+    f: '838,44',
+    g: '834,17',
+    h: '830,75',
+  },
+  {
+    name: 'Цена стакан + крышка, с НДС',
+    a: '1 207,70',
+    b: '1 061,63',
+    c: '999,99',
+    d: '962,01',
+    e: '944,76',
+    f: '939,05',
+    g: '934,27',
+    h: '930,44',
+  },
+];
+
+// table 3
+const columns_2 = [
+  {
+    name: 'name',
+    required: true,
+    label: 'Статья затрат/Тираж',
+    align: 'left',
+    field: (row) => row.name,
+    style: 'font-size: 16px',
+    headerStyle: {
+      fontSize: '1.2em',
+      fontWeight: 'bold'
+    }
+  },
+  {
+    name: 'a', label: '50 000', field: 'a', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'b', label: '100 000', field: 'b', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'c', label: '150 000', field: 'c', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'd', label: '200 000', field: 'd', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'e', label: '250 000', field: 'e', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'f', label: '300 000', field: 'f', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'g', label: '350 000', field: 'g', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+  {
+    name: 'h', label: '400 000', field: 'h', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+];
+
+const rows_2 = [
+  {
+    name: 'Цена стакан + крышка, без НДС',
+    a: '688,12',
+    b: '664,60',
+    c: '656,76',
+    d: '652,84',
+    e: '650,49',
+    f: '648,92',
+    g: '647,80',
+    h: '645,22',
+  },
+  {
+    name: 'Цена стакан + крышка, с НДС',
+    a: '770,69',
+    b: '744,35',
+    c: '735,57',
+    d: '731,18',
+    e: '728,54',
+    f: '726,79',
+    g: '725,53',
+    h: '722,64',
+  },
+];
+
+// table 4
+const columns_3 = [
+  {
+    name: 'name',
+    required: true,
+    label: 'Статья затрат/Тираж',
+    align: 'left',
+    field: (row) => row.name,
+    style: 'font-size: 15px',
+    headerStyle: {
+      fontSize: '1.2em',
+      fontWeight: 'bold'
+    }
+  },
+  {
+    name: 'a', label: '50 000', field: 'a', style: 'font-size: 15px', headerStyle: {
+      fontSize: '1.2em'
+    }
+  },
+
+];
+
+const rows_3 = [
+  {
+    name: 'Итого, цена без НДС',
+    a: '130,64',
+  },
+  {
+    name: 'Итого, цена с НДС',
+    a: '146,31',
+  },
+];
 </script>
 
 <style lang="sass" scoped>
@@ -279,12 +587,6 @@ const scrollTo = () => {
 .title-bottom span, .title-bottom-sm span
   align-self: flex-end
 
-.custom-caption
-  text-align: center
-  padding: 12px
-  color: white
-  background-color: rgba(0, 0, 0, .3)
-
 .my-card
   width: 100%
   max-width: 250px
@@ -295,5 +597,6 @@ const scrollTo = () => {
   display: block
   margin-left: auto
   margin-right: auto
+
 
 </style>
