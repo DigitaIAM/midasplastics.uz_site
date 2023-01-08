@@ -144,7 +144,7 @@
       </div>
     </div>
 
-    <!-- third card -->
+    <!-- second card -->
     <div class="row full-width q-pt-lg flex-center">
       <div class="col-sm-6">
         <div class="row q-px-lg q-pt-lg text-h5 text-left ">
@@ -159,25 +159,7 @@
       </div>
 
       <div class="col-sm-6 flex-center">
-        <div class="row">
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4">
-            <q-img src="product/a1.jpg" class="img-center q-ma-lg gt-xs" style="width: 100%;" />
-          </div>
-          <div class="col-sm-4"></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3">
-          </div>
-          <div class="col-sm-3">
-            <q-img src="product/a2.jpg" class="img-center q-ma-lg gt-xs" style="width: 100%;" />
-          </div>
-          <div class="col-sm-3">
-            <q-img src="product/a3.jpg" class="img-center q-ma-lg gt-xs" style="width: 100%;" />
-          </div>
-          <div class="col-sm-3">
-          </div>
-        </div>
+        <q-img src="product/a1.png" class="img-center q-ma-lg gt-xs" style="width: 100%;" />
       </div>
     </div>
 
@@ -190,22 +172,23 @@
 
     <div>
       <div class="q-pa-md ">
-        <q-table title="Стакан с картонной этикеткой 230мл" title-class="text-bold" :rows="rows" :columns="columns" row-key="name"
-          hide-bottom />
+        <q-table title="Стакан с картонной этикеткой 230мл" title-class="text-bold" :rows="rows" :columns="columns"
+          row-key="name" hide-bottom />
       </div>
 
       <div class="q-pa-md">
-        <q-table title="Стакан с картонной этикеткой 420мл" title-class="text-bold" :rows="rows_1" :columns="columns_1" row-key="name"
-          hide-bottom />
+        <q-table title="Стакан с картонной этикеткой 420мл" title-class="text-bold" :rows="rows_1" :columns="columns_1"
+          row-key="name" hide-bottom />
       </div>
 
       <div class="q-pa-md">
-        <q-table title="Стакан с термоусадочной этикеткой 270мл" title-class="text-bold" :rows="rows_2" :columns="columns_2" row-key="name"
-          hide-bottom />
+        <q-table title="Стакан с термоусадочной этикеткой 270мл" title-class="text-bold" :rows="rows_2"
+          :columns="columns_2" row-key="name" hide-bottom />
       </div>
 
       <div class="q-pa-md float-left">
-        <q-table title="Крышка полипропиленовая" title-class="text-bold" :rows="rows_3" :columns="columns_3" row-key="name" hide-bottom />
+        <q-table title="Крышка полипропиленовая" title-class="text-bold" :rows="rows_3" :columns="columns_3"
+          row-key="name" hide-bottom />
       </div>
     </div>
 
