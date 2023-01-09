@@ -15,13 +15,12 @@
     <!-- products -->
     <div class="row text-h6 text-center full-width q-ma-lg">
       <div class="fit row wrap justify-center content-center q-gutter-xl">
-        <q-card class="my-card" v-for="group in groups" :key="group.img">
-          <a href="#c1"><q-img :src="group.img" :ratio="1" style="width:250px">
-              <div class="absolute-bottom text-subtitle2 text-center">
-                {{ group.title }}
-              </div>
-            </q-img>
-          </a>
+        <q-card class="my-card" v-for="group in groups" :key="group.img" @click="scrollToText(group.ref)">
+          <q-img :src="group.img" :ratio="1" style="width:250px">
+            <div class="absolute-bottom text-subtitle2 text-center">
+              {{ group.title }}
+            </div>
+          </q-img>
         </q-card>
       </div>
     </div>
@@ -34,7 +33,8 @@
 
     <div class="row q-py-lg">
       <div class="col">
-        <div class="text-h5 first" id="c1" style="padding-left: 150px; padding-right: 150px;" label="UF">
+        <div class="text-h5" ref="description" id="description" style="padding-left: 150px; padding-right: 150px;"
+          label="UF">
           <span class="text-bold">Стаканы c УФ печатью</span> является наиболее распространенным и экономичным
           способом декорирования стаканов. Печать на стаканы производится ультрафиолетовыми красками, прочно
           закрепляющимися на поверхности стакана.
@@ -44,7 +44,7 @@
 
     <div class="row q-pt-xl">
       <div class="col">
-        <div class="text-h5" id="c2" style="padding-left: 150px; padding-right: 150px;">
+        <div class="text-h5" ref="description1" id="description1" style="padding-left: 150px; padding-right: 150px;">
           <span class="text-bold ">Стакан с картонной этикеткой – комбинация пластика и картона.</span> На наружную
           поверхность
           изготовленного полипропиленового стакана наклеивается картонная этикетка.
@@ -54,7 +54,7 @@
 
     <div class="row q-pt-xl">
       <div class="col">
-        <div class="text-h5" id="c3" style="padding-left: 150px; padding-right: 150px;">
+        <div class="text-h5" ref="description2" id="description2" style="padding-left: 150px; padding-right: 150px;">
           <span class="text-bold ">Стакан с термоусадочной этикеткой.</span> На наружную поверхность полипропиленового
           стакана усаживается термоусадочная этикетка. Печать наносится на внутреннюю поверхность этикетки, благодаря
           чему изображение долго сохраняет свою насыщенность и не истирается.
@@ -64,7 +64,7 @@
 
     <div class="row q-py-xl">
       <div class="col">
-        <div class="text-h5" id="c4" style="padding-left: 150px; padding-right: 150px;">
+        <div class="text-h5" ref="description3" id="description3" style="padding-left: 150px; padding-right: 150px;">
           <span class="text-bold ">Крышки на стаканы.</span> Мы производим полипропиленовые крышки «нахлобучки»
           (поверх крышки для фольги) высокого качества, пригодные для надевания на стакан на высокоскоростных
           разливочных линиях.
@@ -72,7 +72,7 @@
       </div>
     </div>
 
-    <q-btn icon="shopping_cart" no-caps color="deep-orange" glossy class="text-h4  q-mb-xl" @click="scrollTo()">
+    <q-btn icon="shopping_cart" no-caps color="deep-orange" glossy class="text-h4 q-mb-xl" @click="scrollTo()">
       Оформить заказ
     </q-btn>
 
@@ -245,24 +245,50 @@
 
 <script setup>
 import { defineComponent, ref } from "vue";
-import { scroll } from 'quasar'
-const { getScrollTarget, setVerticalScrollPosition } = scroll
+import { scroll } from 'quasar';
+const { getScrollTarget, setVerticalScrollPosition } = scroll;
 
-const slide = ref('first');
 const groups = [
-  { img: "product/a5.jpg", title: "Cтакан с УФ печатью", id: "1" },
-  { img: "product/a6.jpg", title: "Стакан с картонной этикеткой", id: "2" },
-  { img: "product/a7.jpg", title: "Стакан с термоусадочной этикеткой", id: "3" },
-  { img: "product/a8.jpg", title: "Крышки на стаканы", id: "4" },
+  { img: "product/a5.jpg", title: "Cтакан с УФ печатью", ref: "description" },
+  { img: "product/a6.jpg", title: "Стакан с картонной этикеткой", ref: "description1" },
+  { img: "product/a7.jpg", title: "Стакан с термоусадочной этикеткой", ref: "description2" },
+  { img: "product/a8.jpg", title: "Крышки на стаканы", ref: "description3" },
 ]
 
-const ordering = ref(null)
+const ordering = ref(null);
 const scrollTo = () => {
   const el = ordering.value
   const target = getScrollTarget(el)
   const offset = el.offsetTop
   const duration = 300
   setVerticalScrollPosition(target, offset, duration)
+}
+
+const description = ref(null);
+const description1 = ref(null);
+const description2 = ref(null);
+const description3 = ref(null);
+let el;
+let target;
+let offset;
+let duration;
+const scrollToText = (data) => {
+  if (data === description.value.id) {
+    el = description.value;
+  }
+  else if (data === description1.value.id) {
+    el = description1.value;
+  }
+  else if (data === description2.value.id) {
+    el = description2.value;
+  }
+  else {
+    el = description3.value;
+  }
+  target = getScrollTarget(el);
+  offset = el.offsetTop;
+  duration = 300;
+  setVerticalScrollPosition(target, offset, duration);
 }
 
 // price list
