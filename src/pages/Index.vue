@@ -25,16 +25,16 @@
       </div>
     </div>
 
-    <div class="full-width q-py-lg">
-      <div class="text-right text-h3 text-bold text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-right: 600px;">Продукция</span>
+    <div class="row full-width q-pt-lg">
+      <div class="col-xs-12 col-sm-12 col-md-4"></div>
+      <div class="col-xs-12 col-sm-12 col-md-8 bg-indigo-9 text-left text-h3 text-bold text-white q-pa-md headlines">
+        &nbsp;Продукция
       </div>
     </div>
 
     <div class="row q-py-lg">
-      <div class="col">
-        <div class="text-h5" ref="description" id="description" style="padding-left: 150px; padding-right: 150px;"
-          label="UF">
+      <div class="col-xs-12">
+        <div class="text-h5 product" ref="description" id="description" label="UF">
           <span class="text-bold">Стаканы c УФ печатью</span> является наиболее распространенным и экономичным
           способом декорирования стаканов. Печать на стаканы производится ультрафиолетовыми красками, прочно
           закрепляющимися на поверхности стакана.
@@ -43,8 +43,8 @@
     </div>
 
     <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5" ref="description1" id="description1" style="padding-left: 150px; padding-right: 150px;">
+      <div class="col-xs-12">
+        <div class="text-h5 product" ref="description1" id="description1">
           <span class="text-bold ">Стакан с картонной этикеткой – комбинация пластика и картона.</span> На наружную
           поверхность
           изготовленного полипропиленового стакана наклеивается картонная этикетка.
@@ -53,8 +53,8 @@
     </div>
 
     <div class="row q-pt-xl">
-      <div class="col">
-        <div class="text-h5" ref="description2" id="description2" style="padding-left: 150px; padding-right: 150px;">
+      <div class="col-xs-12">
+        <div class="text-h5 product" ref="description2" id="description2">
           <span class="text-bold ">Стакан с термоусадочной этикеткой.</span> На наружную поверхность полипропиленового
           стакана усаживается термоусадочная этикетка. Печать наносится на внутреннюю поверхность этикетки, благодаря
           чему изображение долго сохраняет свою насыщенность и не истирается.
@@ -63,8 +63,8 @@
     </div>
 
     <div class="row q-py-xl">
-      <div class="col">
-        <div class="text-h5" ref="description3" id="description3" style="padding-left: 150px; padding-right: 150px;">
+      <div class="col-xs-12">
+        <div class="text-h5 product" ref="description3" id="description3">
           <span class="text-bold ">Крышки на стаканы.</span> Мы производим полипропиленовые крышки «нахлобучки»
           (поверх крышки для фольги) высокого качества, пригодные для надевания на стакан на высокоскоростных
           разливочных линиях.
@@ -72,21 +72,23 @@
       </div>
     </div>
 
-    <q-btn icon="shopping_cart" no-caps color="deep-orange" glossy class="text-h4 q-mb-xl" @click="scrollTo()">
+    <q-btn icon="shopping_cart" no-caps color="deep-orange" glossy class="text-h4 q-mb-xl place-order"
+      @click="scrollTo()">
       Оформить заказ
     </q-btn>
 
     <!-- quality & safety -->
-    <div class="full-width q-pt-lg">
-      <div class="text-left text-h3 text-bold text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-left: 400px;">Качество и безопасность</span>
+    <div class="row full-width q-pt-lg">
+      <div class="col-xs-12 col-sm-12 col-md-8  bg-indigo-9 text-right text-h3 text-bold text-white q-pa-md headlines">
+        Качество и безопасность
       </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 "></div>
     </div>
 
     <div class="row q-pt-xl">
       <div class="col">
-        <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
-          <q-img src="product/a4.jpg" class="q-ml-xl float-right" style="width: 600px; height: auto;" />
+        <div class="text-h5 text-justify safety">
+          <q-img src="product/a4.jpg" class="q-ml-xl float-right" style="max-width:600px; height: auto;" />
           Все наше производство устроено так, как если бы мы производили детское питание - это позволяет нам
           гарантировать чистоту и безопасность нашей продукции. Начиная от полимерной гранулы и заканчивая готовой
           упаковкой с декором - мы отслеживаем качество упаковки всех стадиях производства. Это позволяет нам выпускать
@@ -97,7 +99,8 @@
 
     <div class="row q-pt-xl">
       <div class="col">
-        <div class="text-h4 text-center text-indigo-9 text-bold" style="padding-left: 300px; padding-right: 300px;">
+        <div class="text-h4 text-center text-indigo-9 text-bold slogan"
+          style="padding-left: 300px; padding-right: 300px;">
           ООО «MIDAS PLASTICS» - это производство полного цикла
         </div>
       </div>
@@ -105,16 +108,17 @@
 
     <div class="row q-pt-xl">
       <div class="col">
-        <div class="text-h5 text-justify" style="padding-left: 150px; padding-right: 150px;">
+        <div class="text-h5 text-justify safety">
           Весь путь от гранулы до готовой упаковки с печатью полностью проходит на одной территории, что позволяет нам
           отслеживать весь процесс и производить качественный продукт.</div>
       </div>
     </div>
 
     <!-- tools -->
-    <div class="full-width q-pt-xl">
-      <div class="text-right text-h3 text-bold text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-right: 400px;">Наше производство</span>
+    <div class="row full-width q-pt-lg">
+      <div class="col-xs-12 col-sm-12 col-md-4"></div>
+      <div class="col-xs-12 col-sm-12 col-md-8 bg-indigo-9 text-left text-h3 text-bold text-white q-pa-md headlines">
+        Наше производство
       </div>
     </div>
 
@@ -125,7 +129,7 @@
         <q-img src="tools/1.png" class="img-center q-ma-lg q-ml-xl" style="width: 80%;" />
       </div>
       <div class="col-sm-6">
-        <div class="row q-px-lg q-pt-lg text-h5 text-left">
+        <div class="row q-px-lg q-pt-lg text-h5 text-left list-text">
           <div class="col-1 text-right">
             ✔&nbsp;
           </div>
@@ -133,7 +137,7 @@
             оснащено лучшим в мире оборудованием европейского производства
           </div>
         </div>
-        <div class="row q-px-lg q-pt-lg text-h5">
+        <div class="row q-px-lg q-pt-lg text-h5 list-text">
           <div class="col-1 text-right">
             ✔&nbsp;
           </div>
@@ -147,7 +151,7 @@
     <!-- second card -->
     <div class="row full-width q-pt-lg flex-center">
       <div class="col-sm-6">
-        <div class="row q-px-lg q-pt-lg text-h5 text-left ">
+        <div class="row q-px-lg q-pt-lg text-h5 text-left list-text">
           <div class="col-1 text-right">
             ✔&nbsp;
           </div>
@@ -164,55 +168,64 @@
     </div>
 
     <!-- price list -->
-    <div class="full-width q-py-xl">
-      <div class="text-left text-h3 text-bold text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-left: 550px;" ref="ordering">Прайс лист</span>
+    <div class="row full-width q-pt-lg">
+      <div class="col-xs-12 col-sm-12 col-md-8 bg-indigo-9 text-right text-h3 text-bold text-white q-pa-md headlines">
+        Прайс лист&nbsp;
       </div>
+      <div class="col-xs-12 col-sm-12 col-md-4"></div>
     </div>
 
     <div>
-      <div class="q-pa-md ">
-        <q-table title="Стакан с картонной этикеткой 230мл" title-class="text-bold" :rows="rows" :columns="columns"
-          row-key="name" hide-bottom />
-      </div>
+      <q-scroll-area style="height: 270px; width: 1100px;">
+        <div class="row q-pa-lg q-ml-lg">
+          <q-table title="Стакан с картонной этикеткой 230мл" title-class="text-bold" :rows="rows" :columns="columns"
+            row-key="name" hide-bottom class="my-table" />
+        </div>
+      </q-scroll-area>
 
-      <div class="q-pa-md">
-        <q-table title="Стакан с картонной этикеткой 420мл" title-class="text-bold" :rows="rows_1" :columns="columns_1"
-          row-key="name" hide-bottom />
-      </div>
+      <q-scroll-area style="height: 270px; max-width: 100%;">
+        <div class="row q-pa-lg q-ml-lg">
+          <q-table title="Стакан с картонной этикеткой 420мл" title-class="text-bold" :rows="rows_1"
+            :columns="columns_1" row-key="name" hide-bottom class="my-table" />
+        </div>
+      </q-scroll-area>
 
-      <div class="q-pa-md">
-        <q-table title="Стакан с термоусадочной этикеткой 270мл" title-class="text-bold" :rows="rows_2"
-          :columns="columns_2" row-key="name" hide-bottom />
-      </div>
+      <q-scroll-area style="height: 270px; max-width: 100%;">
+        <div class="row q-pa-lg q-ml-lg">
+          <q-table title="Стакан с термоусадочной этикеткой 270мл" title-class="text-bold" :rows="rows_2"
+            :columns="columns_2" row-key="name" hide-bottom class="my-table" />
+        </div>
+      </q-scroll-area>
 
-      <div class="q-pa-md float-left">
+      <div class="q-pa-lg q-ml-lg float-left">
         <q-table title="Крышка полипропиленовая" title-class="text-bold" :rows="rows_3" :columns="columns_3"
-          row-key="name" hide-bottom />
+          row-key="name" hide-bottom class="my-table" />
       </div>
     </div>
 
     <!-- placing orders -->
-    <div class="full-width q-py-xl">
-      <div class="text-right text-h3 text-bold text-white">
-        <span class="bg-indigo-9 q-pa-md" style="padding-right: 550px;" ref="ordering">Прием заказов</span>
+    <div class="row full-width q-pt-lg">
+      <div class="col-xs-12 col-sm-12 col-md-4"></div>
+      <div class="col-xs-12 col-sm-12 col-md-8 bg-indigo-9 text-left text-h3 text-bold text-white q-pa-md headlines"
+        ref="ordering">
+        &nbsp;Прием заказов
       </div>
     </div>
 
     <div class="row full-width q-pt-md">
-      <div class="col-sm-7 text-center">
+      <div class="col-md-8 text-center">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.069332161991!2d66.93449035323566!3d39.67065494165193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19f6d85e60d1%3A0xb4d60d21fc6f24ae!2z0J7QntCeICLQotCe0J3QkyI!5e0!3m2!1sru!2s!4v1673002782281!5m2!1sru!2s"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div class="col-sm-5">
-        <div class="q-pa-md" style="max-width: 400px">
+      <div class="col-md-4">
+        <div class="q-pa-md">
           <div class="row">
-            <div class="col-sm-1 text-primary text-h6"><span class="material-icons">phone
+            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon"><span class="material-icons">phone&nbsp;
               </span></div>
-            <div class="col-sm-11 text-h6"><a href="tel:+998933338575" style="color: darkorchid;">
+            <div class="col-xs-11 col-sm-9 col-md-11 text-h6 contacts"><a href="tel:+998933338575" style="color: darkorchid;">
                 +998 93 333-85-75
               </a> <br />
               <a href="tel:+998937203338" style="color: darkorchid;">
@@ -221,19 +234,19 @@
             </div>
           </div>
         </div>
-        <div class="q-pa-md" style="max-width: 400px">
+        <div class="q-pa-md">
           <div class="row">
-            <div class="col-sm-1 text-primary text-h6"><span class="material-icons">place
+            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon"><span class="material-icons">place&nbsp;
               </span></div>
-            <div class="col-sm-11 text-h6">Узбекистан, г. Самарканд, ул. Гагарина, 36.
+            <div class="col-xs-11 col-sm-9 col-md-11 text-h6 contacts">Узбекистан, г. Самарканд, ул. Гагарина, 36.
             </div>
           </div>
         </div>
-        <div class="q-pa-md" style="max-width: 400px">
+        <div class="q-pa-md">
           <div class="row">
-            <div class="col-sm-1 text-primary text-h6"><span class="material-icons">mail
+            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon"><span class="material-icons">mail&nbsp;
               </span></div>
-            <div class="col-sm-11 text-h6"><a href="mailto:info@midasplastics.uz">info@midasplastics.uz</a>
+            <div class="col-xs-11 col-sm-9 col-md-11 text-h6 contacts"><a href="mailto:info@midasplastics.uz">info@midasplastics.uz</a>
             </div>
           </div>
         </div>
@@ -607,5 +620,112 @@ const rows_3 = [
   margin-left: auto
   margin-right: auto
 
+.product
+  margin-left: 30px
+  margin-right: 30px
+  
+.safety
+  margin-left: 30px
+  margin-right: 30px
 
+@media only screen and (max-width: 600px) 
+  .headlines
+      font-size: 30px
+      text-align: center
+  .product
+      font-size: 20px
+      width: 350px
+  .place-order
+      font-size: 20px
+
+  .safety
+      width:350px
+      text-align: left
+      font-size: 20px
+
+  .slogan
+      font-size: 26px
+
+  .list-text
+      font-size: 20px
+  .my-table
+      max-width: 340px
+      margin-left: 330px
+
+  .contacts
+      font-size: 20px
+    
+  .map
+      width: 320px
+      height: 300px
+      margin-left: 25px
+
+  .icon
+      text-align: right
+
+@media only screen and (max-width: 768px) and (min-width: 600px)
+  .headlines
+      font-size: 30px
+      text-align: center
+  .product
+      font-size: 20px
+      width: 600px
+  .place-order
+      font-size: 20px
+
+  .safety
+      width:600px
+      text-align: left
+      font-size: 20px
+
+  .slogan
+      font-size: 26px
+
+  .list-text
+      font-size: 20px
+
+  .my-table
+      max-width: 600px
+      margin-left: 220px
+
+  .map
+      width: 500px
+      height: 400px
+      margin-left: 100px
+
+  .icon
+      text-align: right
+
+@media only screen and (max-width: 1024px) and (min-width: 768px)
+  .headlines
+      font-size: 30px
+      text-align: center
+  .product
+      font-size: 20px
+      width: 700px
+  .place-order
+      font-size: 20px
+
+  .safety
+      width:700px
+      text-align: left
+      font-size: 20px
+
+  .slogan
+      font-size: 26px
+
+  .list-text
+      font-size: 20px
+  .my-table
+      max-width: 700px
+      margin-left: 180px
+
+  .map
+      width: 550px
+      height: 500px
+      margin-left: 125px
+
+  
+  .icon
+      text-align: right
 </style>
