@@ -201,9 +201,9 @@
         &nbsp;Прием заказов
       </div>
     </div>
-
+    <!-- this div to be loaded when device vp greater than 600px -->
     <div class="row full-width q-pt-md">
-      <div class="col-md-8 text-center">
+      <div class="col-md-8 text-center gt-xs">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.069332161991!2d66.93449035323566!3d39.67065494165193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19f6d85e60d1%3A0xb4d60d21fc6f24ae!2z0J7QntCeICLQotCe0J3QkyI!5e0!3m2!1sru!2s!4v1673002782281!5m2!1sru!2s"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"
@@ -213,15 +213,21 @@
       <div class="col-md-4">
         <div class="q-pa-md">
           <div class="row">
-            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon"><span class="material-icons">phone&nbsp;
+            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon q-mt-sm"><span class="material-icons">phone&nbsp;
               </span></div>
-            <div class="col-xs-11 col-sm-9 col-md-11 text-h6 contacts"><a href="tel:+998933338575"
-                style="color: darkorchid;">
-                +998 93 333-85-75
-              </a> <br />
-              <a href="tel:+998937203338" style="color: darkorchid;">
-                +998 93 720-33-38
-              </a>
+            <div class="col-xs-11 col-sm-9 col-md-11 text-h6 contacts">
+              <div>
+                <!-- <a href="tel:+998933338575" style="color: darkorchid;">
+                  +998 93 333-85-75
+                </a> -->
+                <q-btn color="purple" flat label="+998 93 333-85-75" href="tel:+998933338575" class="text-h6"/>
+              </div><br />
+              <div>
+                <!-- <a href="tel:+998937203338" style="color: darkorchid;">
+                  +998 93 720-33-38
+                </a> -->
+                <q-btn color="purple" flat label="+998 93 720-33-38" href="tel:+998937203338" class="text-h6"/>
+              </div>
             </div>
           </div>
         </div>
@@ -242,6 +248,13 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- this div to be loaded when device vp less than 600px -->
+      <div class="col-md-8 q-my-lg lt-sm">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.069332161991!2d66.93449035323566!3d39.67065494165193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19f6d85e60d1%3A0xb4d60d21fc6f24ae!2z0J7QntCeICLQotCe0J3QkyI!5e0!3m2!1sru!2s!4v1673002782281!5m2!1sru!2s"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
     </div>
@@ -373,7 +386,8 @@ const scrollToText = (data) => {
   .map
       width: 320px
       height: 300px
-      margin-left: 25px
+      margin-left: 45px
+      
 
   .icon
       text-align: right
