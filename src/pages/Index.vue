@@ -37,7 +37,7 @@
     </div>
 
     <div class="row text-h6 text-center full-width q-my-lg lt-sm">
-      <div class="fit row wrap justify-center content-center q-gutter-y-lg">
+      <div class="fit row wrap justify-center content-center q-gutter-md">
         <q-card class="my-card" v-for="group in groups" :key="group.img" @click="scrollToText(group.ref)">
           <q-img :src="group.img" :ratio="1" style="width:250px">
             <div class="absolute-bottom text-subtitle2 text-center">
@@ -95,10 +95,14 @@
       </div>
     </div>
 
-    <q-btn icon="shopping_cart" no-caps color="deep-orange" glossy class="text-h4 q-my-lg place-order"
-      @click="scrollTo()">
-      Оформить заказ
-    </q-btn>
+    <div class="row full-width">
+      <div class="col-xs-12 text-center">
+        <q-btn icon="shopping_cart" no-caps color="deep-orange" glossy class="text-h4 q-my-lg place-order"
+          @click="scrollTo()">
+          Оформить заказ
+        </q-btn>
+      </div>
+    </div>
 
     <!-- quality & safety -->
     <div class="row full-width q-pt-md">
@@ -195,14 +199,14 @@
 
     <!-- placing orders -->
     <div class="row full-width q-pt-lg">
-      <div class="col-xs-12 col-sm-12 col-md-4"></div>
-      <div class="col-xs-12 col-sm-12 col-md-8 bg-indigo-9 text-left text-h3 text-bold text-white q-pa-md headlines"
+      <div class="col-xs-12 col-sm-12 col-md-8 bg-indigo-9 text-right text-h3 text-bold text-white q-pa-md headlines"
         ref="ordering">
         &nbsp;Прием заказов
       </div>
+      <div class="col-xs-12 col-sm-12 col-md-4"></div>
     </div>
     <!-- this div to be loaded when device vp greater than 600px -->
-    <div class="row full-width q-pt-md">
+    <div class="row full-width q-pt-lg">
       <div class="col-md-8 text-center gt-xs">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.069332161991!2d66.93449035323566!3d39.67065494165193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19f6d85e60d1%3A0xb4d60d21fc6f24ae!2z0J7QntCeICLQotCe0J3QkyI!5e0!3m2!1sru!2s!4v1673002782281!5m2!1sru!2s"
@@ -213,20 +217,21 @@
       <div class="col-md-4">
         <div class="q-pa-md">
           <div class="row">
-            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon q-mt-sm"><span class="material-icons">phone&nbsp;
+            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon q-mt-sm"><span
+                class="material-icons">phone&nbsp;
               </span></div>
             <div class="col-xs-11 col-sm-9 col-md-11 text-h6 contacts">
               <div>
                 <!-- <a href="tel:+998933338575" style="color: darkorchid;">
                   +998 93 333-85-75
                 </a> -->
-                <q-btn color="purple" flat label="+998 93 333-85-75" href="tel:+998933338575" class="text-h6"/>
+                <q-btn color="purple" flat label="+998 93 333-85-75" href="tel:+998933338575" class="text-h6" />
               </div><br />
               <div>
                 <!-- <a href="tel:+998937203338" style="color: darkorchid;">
                   +998 93 720-33-38
                 </a> -->
-                <q-btn color="purple" flat label="+998 93 720-33-38" href="tel:+998937203338" class="text-h6"/>
+                <q-btn color="purple" flat label="+998 93 720-33-38" href="tel:+998937203338" class="text-h6" />
               </div>
             </div>
           </div>
@@ -253,10 +258,9 @@
       <div class="col-md-8 q-my-lg lt-sm">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.069332161991!2d66.93449035323566!3d39.67065494165193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19f6d85e60d1%3A0xb4d60d21fc6f24ae!2z0J7QntCeICLQotCe0J3QkyI!5e0!3m2!1sru!2s!4v1673002782281!5m2!1sru!2s"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"
+          style="border:0;" allowfullscreen="" loading="lazy" class="map"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
     </div>
   </q-page>
 </template>
@@ -358,25 +362,68 @@ const scrollToText = (data) => {
   margin-left: 30px
   margin-right: 30px
 
-@media only screen and (max-width: 600px) 
+
+@media only screen and (max-width: 360px) 
+  .headlines
+      font-size: 25px
+      text-align: center
+  .product
+      font-size: 17px
+      // width: 250px
+      margin-left: 30px
+      margin-right: 30px
+  .place-order
+      font-size: 17px
+
+  .safety
+      // width:320px
+      text-align: left
+      font-size: 17px
+      margin-left: 30px
+      margin-right: 30px
+
+  .slogan
+      font-size: 20px
+      margin-left: 30px
+      margin-right: 30px
+      // width:320px
+  .list-text
+      font-size: 17px
+
+  .contacts
+      font-size: 17px
+    
+  .icon
+      text-align: right
+  .map
+      width: 200px
+      height: 150px
+      margin-left: 45px
+
+@media only screen and (min-width: 361px) and (max-width: 600px) 
   .headlines
       font-size: 30px
       text-align: center
   .product
       font-size: 20px
-      width: 350px
+      // width: 250px
+      margin-left: 30px
+      margin-right: 30px
   .place-order
       font-size: 20px
 
   .safety
-      width:350px
+      // width:320px
       text-align: left
       font-size: 20px
+      margin-left: 30px
+      margin-right: 30px
 
   .slogan
       font-size: 26px
       margin-left: 30px
       margin-right: 30px
+      // width:320px
   .list-text
       font-size: 20px
 
@@ -386,13 +433,12 @@ const scrollToText = (data) => {
   .map
       width: 320px
       height: 300px
-      margin-left: 45px
+      margin-left: 35px
       
-
   .icon
       text-align: right
 
-@media only screen and (max-width: 768px) and (min-width: 600px)
+@media only screen and (max-width: 767px) and (min-width: 600px)
   .headlines
       font-size: 30px
       text-align: center
@@ -427,17 +473,23 @@ const scrollToText = (data) => {
       text-align: center
   .product
       font-size: 20px
-      width: 700px
+      // width: 700px
+      margin-left: 30px
+      margin-right: 30px
   .place-order
       font-size: 20px
 
   .safety
-      width:700px
+      // width:700px
       text-align: left
       font-size: 20px
+      margin-left: 30px
+      margin-right: 30px
 
   .slogan
       font-size: 26px
+      margin-left: 30px
+      margin-right: 30px
 
   .list-text
       font-size: 20px
