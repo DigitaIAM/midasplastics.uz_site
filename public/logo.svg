@@ -5,7 +5,16 @@
 viewBox="0 0 6343.09 6509.15"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+
  <defs>
+    <!-- <filter id="f2" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter> -->
+  <!-- <filter id='shadow' color-interpolation-filters="sRGB">
+    <feDropShadow dx="4" dy="4" stdDeviation="3" flood-opacity="0.5"/>
+  </filter> -->
   <style type="text/css">
    <![CDATA[
     .str0 {stroke:#393185;stroke-width:44.09;stroke-miterlimit:22.9256}
