@@ -3,7 +3,7 @@
     <!-- title -->
     <div class="full-width top-img header gt-xs">
       <div class="title text-left text-h3 text-bold title-top q-pt-xl q-pl-xl">
-        <q-img src="/logo.svg" style="width: 15vmax; height: auto" class="logo" />
+        <q-img src="/logo1.svg" style="width: 15vmax; height: auto" class="logo" />
       </div>
       <div class="title text-center text-h4 text-bold title-bottom full-width q-pa-md">
         <span class="full-width">
@@ -14,7 +14,7 @@
 
     <div class="full-width top-img header lt-sm">
       <div class="title text-left text-h3 text-bold title-top q-pt-xl q-pl-xl">
-        <q-img src="/logo.svg" style="width: 15vmax; height: auto" class="logo" />
+        <q-img src="/logo1.svg" style="width: 15vmax; height: auto" class="logo" />
       </div>
       <div class="title text-center text-h5 text-bold title-bottom full-width q-pa-md">
         <span class="full-width">
