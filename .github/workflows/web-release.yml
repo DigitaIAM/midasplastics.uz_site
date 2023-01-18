@@ -16,9 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Quasar
-        uses: joshstrange/setup-quasar@1.0.0
-
+      - name: Install Node.js, NPM and Yarn
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18
 
       - name: Get dependencies
         run: yarn
