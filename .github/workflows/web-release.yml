@@ -16,8 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup quasar
-        uses: joshstrange/setup-quasar@v1
+      - name: Setup Quasar
+        uses: joshstrange/setup-quasar@1.0.0
+
 
       - name: Get dependencies
         run: yarn
