@@ -1,0 +1,49 @@
+name: Web Release
+
+on:
+  push:
+    branches:  [ "master" ]
+
+  pull_request:
+    branches: [ "master" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Create Web Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup quasar
+        uses: joshstrange/setup-quasar@v1
+
+      - name: Get dependencies
+        run: yarn
+
+      - name: Start Web Release Build
+        run: quasar build
+
+      - name: Upload Web Build Files
+        uses: actions/upload-artifact@v2
+        with:
+          name: web-release
+          path: ./dist/spa
+
+  deploy:
+    name: Deploy Web Build
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download Web Release
+        uses: actions/download-artifact@v2
+        with:
+          name: web-release
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
