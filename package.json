@@ -1,8 +1,8 @@
 {
   "name": "quasar-midasplastics",
-  "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "version": "0.0.2",
+  "description": "ООО «MIDAS PLASTICS» — Правильная упаковка для правильных продуктов",
+  "productName": "midasplastics.uz",
   "author": "Suxrob9966 <rabbimovich9966@gmail.com>",
   "private": true,
   "scripts": {
