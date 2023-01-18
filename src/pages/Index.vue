@@ -59,7 +59,7 @@
       <div class="col-xs-12">
         <div class="row text-h5 product" ref="description" id="description">
           <div class="col-xs-1 text-center">
-            <q-img src="product/a5.png" style="width:50px; height: auto;"></q-img>
+            <q-img src="product/a5.png" style="width:55px; height: auto;"></q-img>
           </div>
           <div class="col-xs-11 q-pl-lg">
             <span class="text-bold">Стаканы c УФ печатью</span> является наиболее распространенным и экономичным
@@ -74,7 +74,7 @@
       <div class="col-xs-12">
         <div class="row text-h5 product" ref="description1" id="description1">
           <div class="col-xs-1 text-center">
-            <q-img src="product/ke.png" style="width:50px; height: auto;"></q-img>
+            <q-img src="product/a6.png" style="width:50px; height: auto;"></q-img>
           </div>
           <div class="col-xs-11 q-pl-lg">
             <span class="text-bold ">Стакан с картонной этикеткой – комбинация пластика и картона.</span> На наружную
@@ -89,7 +89,7 @@
       <div class="col-xs-12">
         <div class="row text-h5 product" ref="description2" id="description2">
           <div class="col-xs-1 text-center">
-            <q-img src="product/te.png" style="width:50px; height: auto;"></q-img>
+            <q-img src="product/my.png" style="width:50px; height: auto;"></q-img>
           </div>
           <div class="col-xs-11 q-pl-lg">
             <span class="text-bold ">Стакан с термоусадочной этикеткой.</span> На наружную поверхность полипропиленового
@@ -104,7 +104,7 @@
       <div class="col-xs-12">
         <div class="row text-h5 product" ref="description3" id="description3">
           <div class="col-xs-1 text-center">
-            <q-img src="product/ks.png" style="width:50px; height: auto;"></q-img>
+            <q-img src="product/a8.png" style="width:50px; height: auto;"></q-img>
           </div>
           <div class="col-xs-11 q-pl-lg">
             <span class="text-bold ">Крышки на стаканы.</span> Мы производим полипропиленовые крышки «нахлобучки»
@@ -292,9 +292,9 @@ const { getScrollTarget, setVerticalScrollPosition } = scroll;
 
 const groups = [
   { img: "product/a5.png", title: "Cтакан с УФ печатью", ref: "description" },
-  { img: "product/a6.jpg", title: "Стакан с картонной этикеткой", ref: "description1" },
-  { img: "product/a7.png", title: "Стакан с термоусадочной этикеткой", ref: "description2" },
-  { img: "product/ks.png", title: "Крышки на стаканы", ref: "description3" },
+  { img: "product/a6.png", title: "Стакан с картонной этикеткой", ref: "description1" },
+  { img: "product/my.png", title: "Стакан с термоусадочной этикеткой", ref: "description2" },
+  { img: "product/a8.png", title: "Крышки на стаканы", ref: "description3" },
 ]
 
 const ordering = ref(null);
