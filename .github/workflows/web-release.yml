@@ -20,12 +20,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 18
+          cache: 'yarn'
 
       - name: Get dependencies
         run: yarn
 
       - name: Start Web Release Build
-        run: quasar build
+        run: npx quasar build
 
       - name: Upload Web Build Files
         uses: actions/upload-artifact@v2
