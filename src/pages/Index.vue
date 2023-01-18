@@ -59,7 +59,7 @@
       <div class="col-xs-12">
         <div class="row text-h5 product" ref="description" id="description">
           <div class="col-xs-1 text-center">
-            <q-img src="product/uf.png" style="width:50px; height: auto;"></q-img>
+            <q-img src="product/a5.png" style="width:50px; height: auto;"></q-img>
           </div>
           <div class="col-xs-11 q-pl-lg">
             <span class="text-bold">Стаканы c УФ печатью</span> является наиболее распространенным и экономичным
@@ -291,10 +291,10 @@ import { scroll } from 'quasar';
 const { getScrollTarget, setVerticalScrollPosition } = scroll;
 
 const groups = [
-  { img: "product/a5.jpg", title: "Cтакан с УФ печатью", ref: "description" },
+  { img: "product/a5.png", title: "Cтакан с УФ печатью", ref: "description" },
   { img: "product/a6.jpg", title: "Стакан с картонной этикеткой", ref: "description1" },
-  { img: "product/a7.jpg", title: "Стакан с термоусадочной этикеткой", ref: "description2" },
-  { img: "product/a8.jpg", title: "Крышки на стаканы", ref: "description3" },
+  { img: "product/a7.png", title: "Стакан с термоусадочной этикеткой", ref: "description2" },
+  { img: "product/ks.png", title: "Крышки на стаканы", ref: "description3" },
 ]
 
 const ordering = ref(null);
@@ -365,7 +365,7 @@ const scrollToText = (data) => {
   align-self: flex-end
 
 .logo
-  filter: drop-shadow( 2px 2px 20px white)
+  filter: drop-shadow( 0px 5px 20px white)
 
 .my-card
   width: 100%

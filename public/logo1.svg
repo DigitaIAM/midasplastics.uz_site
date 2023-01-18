@@ -5,10 +5,12 @@
 viewBox="0 0 1574.65 1321.66"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
- <defs>
+ <defs> 
   <filter id="f1" x="0" y="0" width="200%" height="200%">
     <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
-    <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+    <!-- <feBlend in="SourceGraphic" in2="offOut" mode="normal" /> -->
+    <feOffset result="offOut1" in="SourceGraphic1" dx="-20" dy="-20" />
+    <!-- <feBlend in="SourceGraphic" in2="offOut" in3="offOut1" mode="normal" /> -->
   </filter>
   <font id="FontID0" horiz-adv-x="605" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
 	<font-face 
