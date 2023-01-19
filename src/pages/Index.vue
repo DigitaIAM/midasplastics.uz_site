@@ -202,7 +202,7 @@
             ✔&nbsp;
           </div>
           <div class="col">
-            позволяет производить широкий ассортимент стаканов различных форм и объемов без <br />значительных
+            позволяет производить широкий ассортимент стаканов различных форм и объемов без значительных
             инвестиций в дорогостоящие пресс-формы
           </div>
         </div>
@@ -237,22 +237,19 @@
       <div class="col-md-4">
         <div class="q-pa-md">
           <div class="row">
-            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon q-mt-sm"><span
-                class="material-icons">phone&nbsp;
-              </span></div>
+            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon q-mt-sm">
+              <span class="material-icons">phone&nbsp;</span>
+            </div>
             <div class="col-xs-11 col-sm-9 col-md-11 text-h6 contacts">
-              <div>
-                <!-- <a href="tel:+998933338575" style="color: darkorchid;">
-                  +998 93 333-85-75
-                </a> -->
-                <q-btn color="purple" flat label="+998 93 333-85-75" href="tel:+998933338575" class="text-h6" />
-              </div><br />
-              <div>
-                <!-- <a href="tel:+998937203338" style="color: darkorchid;">
-                  +998 93 720-33-38
-                </a> -->
-                <q-btn color="purple" flat label="+998 93 720-33-38" href="tel:+998937203338" class="text-h6" />
-              </div>
+              <q-btn color="purple" flat label="+998 93 333-85-75" href="tel:+998933338575" class="text-h6" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-1 col-sm-3 col-md-1 text-primary text-h6 icon q-mt-sm">
+              <span class="material-icons">phone&nbsp;</span>
+            </div>
+            <div class="col-xs-11 col-sm-9 col-md-11 text-h6 contacts">
+              <q-btn color="purple" flat label="+998 93 720-33-38" href="tel:+998937203338" class="text-h6" />
             </div>
           </div>
         </div>
@@ -291,7 +288,7 @@ import { scroll } from 'quasar';
 const { getScrollTarget, setVerticalScrollPosition } = scroll;
 
 const groups = [
-  { img: "product/a5.png", title: "Cтакан с УФ печатью", ref: "description" },
+  { img: "product/a5.png", title: "Стакан с УФ печатью", ref: "description" },
   { img: "product/a6.png", title: "Стакан с картонной этикеткой", ref: "description1" },
   { img: "product/my.png", title: "Стакан с термоусадочной этикеткой", ref: "description2" },
   { img: "product/a8.png", title: "Крышки на стаканы", ref: "description3" },
