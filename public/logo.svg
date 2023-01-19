@@ -6,7 +6,7 @@ viewBox="0 0 6343.09 6509.15"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
 
- <defs>
+ <defs> 
     <!-- <filter id="f2" x="0" y="0" width="200%" height="200%">
       <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
       <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
