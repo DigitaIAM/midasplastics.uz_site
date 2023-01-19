@@ -140,9 +140,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `Quasar App`,
-        short_name: `Quasar App`,
-        description: `A Quasar Framework app`,
+        name: `Midas Plastics`,
+        short_name: `Midas Plastics`,
+        description: `Правильная упаковка для правильных продуктов`,
         display: "standalone",
         orientation: "portrait",
         background_color: "#ffffff",
