@@ -3,7 +3,7 @@
     <!-- title -->
     <div class="full-width top-img header gt-xs">
       <div class="title text-left text-h3 text-bold title-top q-pt-xl q-pl-xl">
-        <q-img src="/logo1.svg" style="width: 15vmax; height: auto" class="logo" />
+        <q-img src="/logo.svg" style="width: 15vmax; height: auto" class="logo" />
       </div>
       <div class="title text-center text-h4 text-bold title-bottom full-width q-pa-md">
         <span class="full-width">
@@ -14,7 +14,7 @@
 
     <div class="full-width top-img header lt-sm">
       <div class="title text-left text-h3 text-bold title-top q-pt-xl q-pl-xl">
-        <q-img src="/logo1.svg" style="width: 15vmax; height: auto" class="logo" />
+        <q-img src="/logo.svg" style="width: 15vmax; height: auto" class="logo" />
       </div>
       <div class="title text-center text-h5 text-bold title-bottom full-width q-pa-md">
         <span class="full-width">
@@ -351,7 +351,7 @@ const scrollToText = (data) => {
 .title
   color: #f5f7f5
   text-shadow: 1px 1px #000000
-  
+
 .title-bottom
   position: absolute
   top: 250px
@@ -381,13 +381,13 @@ const scrollToText = (data) => {
 .product
   // margin-left: 30px
   // margin-right: 30px
-  
+
 .safety
   margin-left: 30px
   margin-right: 30px
 
 
-@media only screen and (max-width: 360px) 
+@media only screen and (max-width: 360px)
   .headlines
       font-size: 25px
       text-align: center
@@ -416,7 +416,7 @@ const scrollToText = (data) => {
 
   .contacts
       font-size: 17px
-    
+
   .icon
       text-align: right
   .map
@@ -424,7 +424,7 @@ const scrollToText = (data) => {
       height: 150px
       margin-left: 45px
 
-@media only screen and (min-width: 361px) and (max-width: 600px) 
+@media only screen and (min-width: 361px) and (max-width: 600px)
   .headlines
       font-size: 30px
       text-align: center
@@ -451,12 +451,12 @@ const scrollToText = (data) => {
 
   .contacts
       font-size: 20px
-    
+
   .map
       width: 320px
       height: 300px
       margin-left: 35px
-      
+
   .icon
       text-align: right
 
