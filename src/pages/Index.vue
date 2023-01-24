@@ -74,7 +74,7 @@
       <div class="col-xs-12">
         <div class="row text-h5 product" ref="description1" id="description1">
           <div class="col-xs-1 text-center">
-            <q-img src="product/a6.png" style="width:50px; height: auto;"></q-img>
+            <q-img src="product/ke.png" style="width:50px; height: auto;"></q-img>
           </div>
           <div class="col-xs-11 q-pl-lg">
             <span class="text-bold ">Стакан с картонной этикеткой – комбинация пластика и картона.</span> На наружную
@@ -289,7 +289,7 @@ const { getScrollTarget, setVerticalScrollPosition } = scroll;
 
 const groups = [
   { img: "product/a5.png", title: "Стакан с УФ печатью", ref: "description" },
-  { img: "product/a6.png", title: "Стакан с картонной этикеткой", ref: "description1" },
+  { img: "product/ke.png", title: "Стакан с картонной этикеткой", ref: "description1" },
   { img: "product/my.png", title: "Стакан с термоусадочной этикеткой", ref: "description2" },
   { img: "product/a8.png", title: "Крышки на стаканы", ref: "description3" },
 ]
